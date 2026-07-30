@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Popup Bypasser",
+  "version": "1.0",
+  "description": "Automatically removes the 'most real place' popup and unlocks scrolling.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
